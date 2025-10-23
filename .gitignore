@@ -1,31 +1,48 @@
-# Ignored session files (from user request)
-session-heba_refe
-session-cookies-heba_refe.pkl
+# --- PROTEGER INNOVACIÓN (CÓDIGO FUENTE) ---
+# Oculta TODO el código Python
+*.py
 
-# --- ARCHIVOS GRANDES Y MODELOS A IGNORAR ---
+# --- ARCHIVOS GRANDES Y MODELOS (¡CRÍTICO!) ---
+# Nunca subir modelos entrenados o checkpoints
 modelo_fine_tuned/
 *.db
 *.safetensors
 *.pt
 *.pth
 *.bin
-# dataset_sentimiento.csv # Descomenta esta línea si el CSV es muy grande
 
-# --- OTROS ARCHIVOS A IGNORAR ---
+# --- DATOS SENSIBLES O GRANDES ---
+# Descomenta si tu dataset es privado o muy grande
+# dataset_sentimiento.csv
+# Descomenta si los archivos de comentarios son privados
+# comentarios_*.txt
+
+# --- SECRETOS Y CONFIGURACIÓN ---
+# ¡NUNCA SUBIR CLAVES API O SECRETOS!
+.env
+*.env
+secrets.toml
+# Ocultar archivos de sesión específicos
+session-heba_refe
+session-cookies-heba_refe.pkl
+
+# --- EJECUTABLES Y ARCHIVOS DE NAVEGADOR ---
 *.exe
+
+# --- ARCHIVOS DE ERROR/LOGS (OPCIONAL) ---
+# Puedes decidir mostrar o no las capturas de error
 failure_screenshot_*.png
 failure_source_*.html
 
-# --- ESTÁNDARES DE PYTHON / OS ---
+# --- CACHÉ Y ENTORNO VIRTUAL ---
 __pycache__/
 *.pyc
 *cpython-*.pyc
 venv/
 .venv/
 *venv/
-.env
-*.env
-secrets.toml
+
+# --- ARCHIVOS DE SISTEMA OPERATIVO ---
 .DS_Store
 Thumbs.db
 .vscode/
