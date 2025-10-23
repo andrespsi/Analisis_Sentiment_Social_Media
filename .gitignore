@@ -1,0 +1,31 @@
+# Ignored session files (from user request)
+session-heba_refe
+session-cookies-heba_refe.pkl
+
+# --- ARCHIVOS GRANDES Y MODELOS A IGNORAR ---
+modelo_fine_tuned/
+*.db
+*.safetensors
+*.pt
+*.pth
+*.bin
+# dataset_sentimiento.csv # Descomenta esta línea si el CSV es muy grande
+
+# --- OTROS ARCHIVOS A IGNORAR ---
+*.exe
+failure_screenshot_*.png
+failure_source_*.html
+
+# --- ESTÁNDARES DE PYTHON / OS ---
+__pycache__/
+*.pyc
+*cpython-*.pyc
+venv/
+.venv/
+*venv/
+.env
+*.env
+secrets.toml
+.DS_Store
+Thumbs.db
+.vscode/

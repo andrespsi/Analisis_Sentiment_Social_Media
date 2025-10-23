@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+nltk
+spacy
+transformers
+torch
+python-dotenv
