@@ -2,8 +2,8 @@
 # Oculta TODO el código Python
 *.py
 
-# --- ARCHIVOS GRANDES Y MODELOS (¡CRÍTICO!) ---
-# Nunca subir modelos entrenados o checkpoints
+# --- ARCHIVOS GRANDES Y MODELOS ---
+# Modelos entrenados o checkpoints
 modelo_fine_tuned/
 *.db
 *.safetensors
@@ -12,27 +12,23 @@ modelo_fine_tuned/
 *.bin
 
 # --- DATOS SENSIBLES O GRANDES ---
-# Descomenta si tu dataset es privado o muy grande
+# dataset es privado o muy grande
 # dataset_sentimiento.csv
-# Descomenta si los archivos de comentarios son privados
+# archivos de comentarios son privados
 # comentarios_*.txt
 
 # --- SECRETOS Y CONFIGURACIÓN ---
-# ¡NUNCA SUBIR CLAVES API O SECRETOS!
 .env
 *.env
 secrets.toml
 # Ocultar archivos de sesión específicos
-session-heba_refe
-session-cookies-heba_refe.pkl
 
 # --- EJECUTABLES Y ARCHIVOS DE NAVEGADOR ---
 *.exe
 
-# --- ARCHIVOS DE ERROR/LOGS (OPCIONAL) ---
-# Puedes decidir mostrar o no las capturas de error
-failure_screenshot_*.png
-failure_source_*.html
+# --- ARCHIVOS DE ERROR/LOGS ---
+screenshot_*.png
+source_*.html
 
 # --- CACHÉ Y ENTORNO VIRTUAL ---
 __pycache__/
